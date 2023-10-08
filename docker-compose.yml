@@ -3,7 +3,7 @@ services:
     redis:
         image: "redis:latest"
     node-app:
-        restart: on-failure
+        restart: always
         build: .
         ports:
             - "3200:8082"
